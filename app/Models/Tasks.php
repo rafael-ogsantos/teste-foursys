@@ -18,6 +18,6 @@ class Tasks
         $stmt = $this->db->prepare('SELECT * FROM `users` WHERE id = ?');
         $stmt->execute([$id]);
 
-        return $stmt->fetch(\PDO::FETCH_ASSOC);
+        return $stmt->fetch(\PDO::FETCH_OBJ);
     }
 }

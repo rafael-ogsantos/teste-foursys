@@ -97,7 +97,7 @@ class MySqlPdo implements MysqlStrategy
 
     public function all()
     {
-        return $this->query->fetchAll(\PDO::FETCH_ASSOC);
+        return $this->query->fetchAll(\PDO::FETCH_OBJ);
     }
 
     public function exec(string $query = null)
@@ -111,7 +111,7 @@ class MySqlPdo implements MysqlStrategy
 
     public function first()
     {
-        return $this->query->fetch(\PDO::FETCH_ASSOC);
+        return $this->query->fetch(\PDO::FETCH_OBJ);
     }
 
     protected function bind($data)

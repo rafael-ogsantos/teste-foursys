@@ -2,8 +2,8 @@
 
 function view(string $_name, array $vars = [])
 {
-    $_filename = __DIR__ . "/../views/{$_name}.php";
-    if(!file_exists($_filename)){
+    $template = __DIR__ . '/../views/template.php';
+    if(!file_exists($template)){
         die("view {$_name} not found!");
     }
 
@@ -11,8 +11,8 @@ function view(string $_name, array $vars = [])
         foreach ($vars as $key => $value) {
             ${$key} = $value;
         }
-
     }
 
-    include_once $_filename;
+    $content = "../views/{$_name}.php";
+    include $template;
 }

@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../estudos/ORM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../site-administravel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -52,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606320644398</updated>
       <workItem from="1606320645445" duration="14744000" />
-      <workItem from="1606401363389" duration="7758000" />
+      <workItem from="1606401363389" duration="13539000" />
     </task>
     <servers />
   </component>
@@ -68,18 +68,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606321808423" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606320868878">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606416471991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606320868878" />
-    <state x="595" y="135" key="NewPhpClassDialog" timestamp="1606402830384">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606416471991" />
+    <state x="595" y="135" key="NewPhpClassDialog" timestamp="1606417955685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="595" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1606402830384" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1606408653877">
+    <state x="595" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1606417955685" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1606418008442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1606408653877" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1606418008442" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1606320720466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
