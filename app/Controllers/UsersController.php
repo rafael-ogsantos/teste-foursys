@@ -22,8 +22,9 @@ class UsersController
         $user = new User;
         $create = $user->create($request->request->all());
         if($create) {
-            echo 'cruado';
+            return header('location: /');
         }
+        echo 'erro';
     }
     
     public function update()

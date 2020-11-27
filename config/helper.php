@@ -16,3 +16,8 @@ function view(string $_name, array $vars = [])
     $content = "../views/{$_name}.php";
     include $template;
 }
+
+function asset(string $asset)
+{
+    return "assets/{$asset}";
+}
