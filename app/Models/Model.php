@@ -58,10 +58,31 @@ abstract class Model
             ->first();
     }
 
-    public function delete()
+    public function update(array $conditions = [], array $data = [])
+    {
+       return $this->getDriver()
+            ->update($conditions, $data)
+            ->exec();
+    }
+
+    public function delete(array $conditions = [])
     {
         return $this->getDriver()
-            ->delete(['id' => $this->id])
+            ->delete($conditions)
+            ->exec();
+    }
+
+    public function select(array $conditions = [])
+    {
+        return $this->getDriver()
+            ->select($conditions)
+            ->exec();
+    }
+
+    public function where(array $conditions)
+    {
+        return $this->getDriver()
+            ->where($conditions)
             ->exec();
     }
 

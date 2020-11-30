@@ -9,7 +9,7 @@ body {
   background-color: #e8e8e8;
 }
 
-button, input {
+button, input, select {
   outline: none;
 }
 
@@ -23,6 +23,37 @@ h2, h3 {
 
 a{ text-decoration: none;}
 
+.table-users th {
+  font-size: 15px;
+  color: #646464;
+  font-weight: 400;
+}
+
+.table-users td {
+  text-align: left;
+  max-width: 21ch;
+  overflow: hidden;
+  color: #a5a5a5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 14px;
+}
+
+i {
+  font-size: 20px;
+}
+
+.table-users tr:nth-child(even) {background: #eaeaea}
+.table-users tr:nth-child(odd) {background: rgb(247, 247, 247)}
+
+
+.table-user th {
+  text-align: left;
+}
+
+.table-user tr {
+  height: 43px;
+}
 
 .row {
     display: -ms-flexbox;
@@ -97,7 +128,7 @@ header {
   
   @media (min-width: 768px){
   .container {
-      width: 970px;
+      width: 1186px;
   }
   }
   
@@ -125,7 +156,7 @@ header {
     background-color: #fff;
     border-radius: 2px;
     width: 100%;
-    height: 400px;
+    height: auto;
     padding: 20px;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
   }
@@ -134,7 +165,7 @@ header {
     margin: 0 0 2rem 0;
   }
 
-  .panel input {
+  .panel input, select {
     color: rgb(105, 105, 105);
     font-size: 16px;
     padding: 12px;
@@ -164,3 +195,12 @@ header {
   .form-group {
     margin-bottom: 1rem;
   }
+
+ .panel table td a {
+   padding: 9px;
+   color: #fff;
+ }
+
+ .alert-empty-user {
+   text-align: center;
+ }

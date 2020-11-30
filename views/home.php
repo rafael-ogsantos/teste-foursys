@@ -1,6 +1,7 @@
 <div class="container">
   <h2 class="title">Página inicial</h2>
   <div class="panel">
+
     <div style="display: flex; justify-content: space-between; align-items: baseline">
       <h3 class="panel-title">Cadastro de usuário</h3>
       <a href="/users" class="users-list">Lista de usuarios</a>
@@ -26,14 +27,14 @@
           <input type="text" name="endereco" id="endereco" placeholder="Endereço">
         </div>
         <div class="col-md-6">
-          <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+          <select id="state" name="estado" placeholder="Estado"></select>
         </div>
         <div class="col-md-6">
-          <input type="text" name="estado" id="estado" placeholder="Estado">
+          <select id="city" name="cidade" placeholder="Cidade"></select>
         </div>
       </div>
-
       <button type="submit" class="btn-submit">Cadastrar</button>
     </form>
   </div>
 </div>
+

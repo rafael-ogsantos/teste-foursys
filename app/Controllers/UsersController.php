@@ -9,7 +9,8 @@ class UsersController
 {
     public function index()
     {
-        return view('users/index');
+        $users = (new User)->findAll();
+        return view('users/index', compact('users'));
     }
 
     public function create()
@@ -19,33 +20,42 @@ class UsersController
 
     public function store($container, $request)
     {
+       
         $user = new User;
         $create = $user->create($request->request->all());
         if($create) {
             return header('location: /');
         }
-        echo 'erro';
+        return json_encode(['create' => false]);
     }
     
-    public function update()
+    public function update($container, $request)
     {
-
+        $id = $request->attributes->get(1);
+        (new User($container))->update(['id' => $id], $request->request->all());
+        return header('location: /users');
     }
 
-    public function edit()
+    public function edit($container, $request)
     {
+        $id = $request->attributes->get(1);
+        if($id) {
+            $user = (new User)->findFirst($id);
+        }
+        return view('users/edit', compact('user'));
+    }   
 
-    }
-
-    public function destroy()
+    public function destroy($container, $request)
     {
-
+        $id = $request->attributes->get(1);
+        (new User($container))->delete(['id' => $id]);
+        return header('location: /users');
     }
 
     public function show($container, $request)
     {
         $user = new Tasks($container);
-        $data = $user->get($request->attributes->get(1));
-        return view('index', ['user' => $data]);
+        $user = $user->get($request->attributes->get(1));
+        return view('users/show', compact('user'));
     }
 }

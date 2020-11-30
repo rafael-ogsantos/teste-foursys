@@ -19,5 +19,5 @@ function view(string $_name, array $vars = [])
 
 function asset(string $asset)
 {
-    return "assets/{$asset}";
+    return "/../assets/{$asset}";
 }

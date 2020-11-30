@@ -25,7 +25,7 @@ class Response
             $action[0] = "\App\Controllers\\$action[0]";
             $action[0] = new $action[0];
         }
-
+        
         echo call_user_func_array($action, $params);
     }
 }
