@@ -11,6 +11,7 @@ interface MysqlStrategy
     public function delete(array $conditions = []);
     public function select(array $conditions = []);
     public function where(array $conditions = []);
+    public function orderById();
     public function all();
     public function exec(string $query = null);
     public function first();

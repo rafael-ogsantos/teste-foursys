@@ -10,7 +10,7 @@
 </head>
 <body>
 <header></header>
-    <main id="content">
+    <main id="content"> 
         <?php require $content; ?>
     </main>
     <script src="https://kit.fontawesome.com/6bdfc8745b.js" crossorigin="anonymous"></script>

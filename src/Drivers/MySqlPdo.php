@@ -124,6 +124,13 @@ class MySqlPdo implements MysqlStrategy
         return $this->query->fetch(\PDO::FETCH_OBJ);
     }
 
+    public function orderById()
+    {
+        $query = $this->query->queryString . ' GROUP BY id';
+        $this->query = $this->pdo->prepare($query); 
+        return $this;  
+    }
+
     public function where(array $conditions = [])
     {
         $query = 'SELECT * FROM ' . $this->table;

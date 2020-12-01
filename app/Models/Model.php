@@ -46,6 +46,7 @@ abstract class Model
     {
         return $this->getDriver()
             ->select($conditions)
+            ->orderById()
             ->exec()
             ->all();
     }
